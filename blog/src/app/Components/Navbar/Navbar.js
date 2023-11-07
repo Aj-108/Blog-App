@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { deleteCookie } from 'cookies-next';
 // import { cookies } from 'next/headers'
 
-function navbar() {
+function Navbar() {
 
   const [auth,setAuth] = useState(false) ;
 
@@ -53,7 +53,7 @@ function navbar() {
   },[])
 
   return (
-    <nav className="navbar flex  text-gray-400 bg-black pl-10 pt-2 pb-2 w-full justify-between items-center pr-10 ">
+    <nav className="navbar flex  text-gray-400 bg-neutral-900 pl-10 pt-2 pb-2 w-full justify-between items-center pr-10 ">
       <div className="navbar-left flex w-24 justify-between">
         <Link href='/pages/profile'>
           <AccountCircleIcon className='icons'/>
@@ -91,4 +91,4 @@ function navbar() {
   )
 }
 
-export default navbar
+export default Navbar

@@ -59,13 +59,13 @@ router.get('/:id',async (req,res) => {
         const blog = await Blog.findById(req.params.id) ;
 
         if(!blog){
-            return res.status(400).json({message : "Blog post not found"}) ;
+            return res.status(400).json({ok:false,message : "Blog post not found"}) ;
         }
 
-        return res.status(200).json(blog) ;
+        return res.status(200).json({ok:true,blog}) ;
 
     }catch(err){
-        return res.status(500).json({message: err.message}) ; 
+        return res.status(500).json({ok:false,message: err.message}) ; 
     }
     
 })

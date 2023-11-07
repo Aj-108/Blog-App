@@ -17,7 +17,7 @@ function BlogCard(data) {
       }}>
 
       </div>
-      <p>
+      <p> 
         {title}
       </p>
     </div>
