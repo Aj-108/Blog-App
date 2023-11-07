@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react' ;
 import './Navbar.css'
@@ -53,7 +53,7 @@ function navbar() {
   },[])
 
   return (
-    <nav className="navbar flex  text-gray-400 bg-black pl-10 pt-2 pb-2 w-full justify-between items-center pr-10 ">
+    <nav className="navbar flex  text-gray-400 bg-neutral-900 pl-10 pt-2 pb-2 w-full justify-between items-center pr-10 ">
       <div className="navbar-left flex w-24 justify-between">
         <Link href='/pages/profile'>
           <AccountCircleIcon className='icons'/>
@@ -84,8 +84,8 @@ function navbar() {
         }
       
         <Link href='/'> Home </Link>
-        <Link href='/pages/about'> About </Link>
-        <Link href='/pages/contact'> Contact </Link> 
+        {/* <Link href='/pages/about'> About </Link>
+        <Link href='/pages/contact'> Contact </Link>  */}
       </div>
     </nav>
   )
