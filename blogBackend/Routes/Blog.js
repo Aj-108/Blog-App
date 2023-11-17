@@ -46,11 +46,11 @@ router.post('/',authTokenHandler,async (req,res,next)=> {
         user.blogs.push(blog._id) ;
         await user.save() ;
 
-        res.status(201).json({message : "Blog Post Created Succesfully",blog}) ;
+        return res.status(201).json({message : "Blog Post Created Succesfully",blog}) ;
 
     }
     catch(err){
-        res.status('501').json({message : err.message})
+        return res.status('500').json({error : err.message})
     }  
 })
 
@@ -59,13 +59,13 @@ router.get('/:id',async (req,res) => {
         const blog = await Blog.findById(req.params.id) ;
 
         if(!blog){
-            return res.status(400).json({message : "Blog post not found"}) ;
+            return res.status(400).json({ok:false,message : "Blog post not found"}) ;
         }
 
-        return res.status(200).json(blog) ;
+        return res.status(200).json({ok:true,blog}) ;
 
     }catch(err){
-        return res.status(500).json({message: err.message}) ; 
+        return res.status(500).json({ok:false,message: err.message}) ; 
     }
     
 })

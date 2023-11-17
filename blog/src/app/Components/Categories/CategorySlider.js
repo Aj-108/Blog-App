@@ -42,8 +42,10 @@ function CategorySlider() {
 
   return (
     <>
-    <div className="px-3">
-        <h1 className="pt-5 pb-5 text-3xl font-bold"> Categories </h1>
+    <div className="">
+        <h1 className="uppercase px-4 mt-5 border-2 py-3 mb-5 text-3xl font-bold max-w-fit border-black border-l-0 rounded-r-2xl bg-black text-white"> 
+          Categories 
+        </h1>
 
 
         <Swiper

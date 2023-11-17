@@ -10,13 +10,12 @@ export default function Home() {
   
   
   return (
-    <main className="">
-      <div className="">
+    <main className="bg-[#dbdbdb]">
+      <div className="pb-10">
         <Navbar/>
         <HomeSlider/>
         <CategorySlider/>
         <BlogSlider/>
-        Welcome to the blog app 
       </div>
     </main>
   )

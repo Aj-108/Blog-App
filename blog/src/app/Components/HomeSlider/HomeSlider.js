@@ -40,11 +40,11 @@ function HomeSlider() {
       >
         <SwiperSlide>
             {/* {console.log(height/2)} */}
-            <Image src={img1} alt="" width={width} height={height/2} style={{objectFir:"cover"}}/>
+            <Image src={img1} alt="" width={width}  style={{objectFir:"cover"}} className='min-h-[450px] h-1/2 object-center'/>
         </SwiperSlide>
         <SwiperSlide>
             {/* {console.log(height/2)} */}
-            <Image src={img2} alt="" width={width} height={height/2} style={{objectFir:"cover"}}/>
+            <Image src={img2} alt="" width={width}  style={{objectFir:"cover"}}/>
         </SwiperSlide>
       </Swiper>
     </>

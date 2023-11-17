@@ -4,17 +4,8 @@ function CaregoryCard(data) {
   const {name,bgcolor,path} = data ;
   
   return (
-    <div style={{
-      background : bgcolor ,
-      display : "flex",
-      justifyContent : "center" ,
-      alignItems : "center",
-      width : "300px",
-      height : "200px"
-    }}>
-
-      <p className="text-white text-2xl"> {name} </p>
-
+    <div className='border-2 text-black p-5 border-black mx-3 rounded-3xl mb-4 hover:cursor-pointer hover:text-white hover:bg-black'>
+      <p className="font-bold text-base"> {name} </p>
     </div>
   )
 }

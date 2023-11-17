@@ -27,7 +27,7 @@ function BlogSlider() {
       })
       .then(response => {
         if(response.ok){
-          console.log(response) ;
+          // console.log(response) ;
           setBlogs(response.blogs)
         }else{
           toast(response.message,{
@@ -82,8 +82,10 @@ function BlogSlider() {
   
     return (
         <>
-        <div className="px-3">
-            <h1 className="pt-5 pb-5 text-3xl font-bold"> Blogs </h1>
+        <div className="">
+            <h1 className="uppercase px-4 mt-5 border-2 py-3 mb-5 text-3xl font-bold max-w-fit border-black border-l-0 rounded-r-2xl bg-black text-white"> 
+              Blogs 
+            </h1>
     
     
             <Swiper
